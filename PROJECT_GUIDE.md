@@ -4,6 +4,8 @@
 
 This project predicts turbofan-engine Remaining Useful Life (RUL) and failure risk within the next 30 cycles from NASA C-MAPSS simulated run-to-failure data. Results are presented in a Streamlit dashboard. Model recommendations are decision support, not engineering diagnoses.
 
+Live deployment: [predictive-maintenance-ai-proj.streamlit.app](https://predictive-maintenance-ai-proj.streamlit.app/)
+
 ## Included capabilities
 
 - Validated C-MAPSS loading for FD001-FD004.
@@ -110,7 +112,7 @@ For another subset, for example FD004:
 | Dashboard | `.\.venv\Scripts\python.exe -m streamlit run app.py` |
 | Tests | `.\.venv\Scripts\python.exe -m pytest -q` |
 
-The dashboard normally opens at `http://localhost:8501`.
+The local dashboard normally opens at `http://localhost:8501`. The deployed dashboard is available at [predictive-maintenance-ai-proj.streamlit.app](https://predictive-maintenance-ai-proj.streamlit.app/).
 
 ## Workflow
 

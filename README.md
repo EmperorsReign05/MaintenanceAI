@@ -5,6 +5,10 @@ NASA C-MAPSS sensor data. The application predicts remaining useful life (RUL),
 estimates the probability of near-term failure, and presents the results in an
 interactive Streamlit dashboard.
 
+## Live demo
+
+Try the deployed dashboard: [predictive-maintenance-ai-proj.streamlit.app](https://predictive-maintenance-ai-proj.streamlit.app/).
+
 This is a decision-support demonstration built with simulated data. It is not a
 replacement for engineering inspection, maintenance procedures, or safety review.
 
@@ -133,6 +137,9 @@ After training, start Streamlit from the project root:
 ```
 
 Open the local URL shown by Streamlit, usually `http://localhost:8501`.
+
+The hosted version is available at
+[predictive-maintenance-ai-proj.streamlit.app](https://predictive-maintenance-ai-proj.streamlit.app/).
 
 The dashboard includes:
 
