@@ -1,0 +1,41 @@
+# Python environments, bytecode, and test output
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Downloaded C-MAPSS source data
+data/*.txt
+data/*.zip
+data/
+
+# Reproducible training artefacts
+models/*.joblib
+models/*.json
+models/*.keras
+reports/*.csv
+reports/*.json
+reports/figures/*.png
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
