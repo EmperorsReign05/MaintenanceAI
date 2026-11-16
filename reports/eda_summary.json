@@ -1,0 +1,42 @@
+{
+  "subset": "FD001",
+  "n_engines": 100,
+  "n_rows": 20631,
+  "missing_values": 0,
+  "lifetime_min": 128,
+  "lifetime_mean": 206.31,
+  "lifetime_max": 362,
+  "informative_sensors": [
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "constant_sensors": [
+    "s1",
+    "s5",
+    "s10",
+    "s16",
+    "s18",
+    "s19"
+  ],
+  "top_sensors_by_rul_correlation": {
+    "s11": -0.6962,
+    "s4": -0.6789,
+    "s12": 0.672,
+    "s7": 0.6572,
+    "s15": -0.6427,
+    "s21": 0.6357
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "project": "Predictive Maintenance AI",
+  "trained_at": "2026-11-14T16:15:35",
+  "subset": "FD001",
+  "best_rul_model": "random_forest",
+  "best_clf_model": "xgboost",
+  "regressors": {
+    "linear_regression": {
+      "label": "Linear Regression",
+      "params": {},
+      "val_rmse": 16.924567615066415,
+      "train_seconds": 0.0
+    },
+    "random_forest": {
+      "label": "Random Forest",
+      "params": {},
+      "val_rmse": 14.449385411856193,
+      "train_seconds": 5.4
+    },
+    "xgboost": {
+      "label": "XGBoost",
+      "params": {},
+      "val_rmse": 14.847459714579074,
+      "train_seconds": 2.2
+    },
+    "svr": {
+      "label": "Support Vector Regression",
+      "params": {},
+      "val_rmse": 15.117923310699984,
+      "train_seconds": 1.4
+    }
+  },
+  "classifiers": {
+    "logistic_regression": {
+      "label": "Logistic Regression",
+      "threshold": 0.8906257537987267,
+      "params": {},
+      "val_pr_auc": 0.9591755119269794,
+      "train_seconds": 0.1
+    },
+    "random_forest": {
+      "label": "Random Forest",
+      "threshold": 0.6697846222855114,
+      "params": {},
+      "val_pr_auc": 0.9644682604722193,
+      "train_seconds": 2.1
+    },
+    "xgboost": {
+      "label": "XGBoost",
+      "threshold": 0.7001922726631165,
+      "params": {},
+      "val_pr_auc": 0.9655943397983515,
+      "train_seconds": 1.6
+    }
+  },
+  "assumptions": {
+    "rul_cap": 125,
+    "failure_window": 30,
+    "warning_rul": 75,
+    "rolling_window": 10
+  },
+  "sensors_used": [
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "sensors_dropped": [
+    "s1",
+    "s5",
+    "s10",
+    "s16",
+    "s18",
+    "s19"
+  ],
+  "n_features": 61,
+  "missing_values": {
+    "train": {
+      "total_missing": 0,
+      "by_column": {}
+    },
+    "test": {
+      "total_missing": 0,
+      "by_column": {}
+    }
+  },
+  "eda": {
+    "subset": "FD001",
+    "n_engines": 100,
+    "n_rows": 20631,
+    "missing_values": 0,
+    "lifetime_min": 128,
+    "lifetime_mean": 206.31,
+    "lifetime_max": 362,
+    "informative_sensors": [
+      "s2",
+      "s3",
+      "s4",
+      "s6",
+      "s7",
+      "s8",
+      "s9",
+      "s11",
+      "s12",
+      "s13",
+      "s14",
+      "s15",
+      "s17",
+      "s20",
+      "s21"
+    ],
+    "constant_sensors": [
+      "s1",
+      "s5",
+      "s10",
+      "s16",
+      "s18",
+      "s19"
+    ],
+    "top_sensors_by_rul_correlation": {
+      "s11": -0.6962,
+      "s4": -0.6789,
+      "s12": 0.672,
+      "s7": 0.6572,
+      "s15": -0.6427,
+      "s21": 0.6357
+    }
+  },
+  "engines": {
+    "train": 80,
+    "validation": 20,
+    "test": 100
+  },
+  "tuning": {
+    "enabled": false,
+    "n_iter": 8,
+    "cv": "GroupKFold(3) by engine"
+  },
+  "lstm_trained": false,
+  "seed": 42,
+  "environment": {
+    "python": "3.13.5",
+    "sklearn": "1.9.1"
+  }
+}
